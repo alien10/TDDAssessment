@@ -6,12 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'CodeSandbox';
   numberData: string = '';
   result: any;
   constructor() {}
   calculate() {
-    // console.log('dbn,jskds');
     try {
       this.result = this.add(this.numberData.toString());
     } catch (error: any) {
